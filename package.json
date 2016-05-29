@@ -18,6 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.12.3",
+    "csvtojson": "^0.5.12",
     "express": "^4.12.3",
     "jade": "^1.9.2",
     "lodash": "^4.13.1",
