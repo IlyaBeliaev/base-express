@@ -1,0 +1,4 @@
+extends ./form.jade
+
+block alert
+  div.alert(role="alert", class=(success ? 'alert-success' : 'alert-danger'))=message

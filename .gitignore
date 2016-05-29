@@ -1,2 +1,4 @@
 .DS_*
 node_modules
+db.json
+npm-debug.log

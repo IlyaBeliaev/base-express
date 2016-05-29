@@ -1,7 +1,7 @@
-var express = require('express')
-  , app = express()
-  , bodyParser = require('body-parser')
-  , port = process.env.PORT || 3000
+const express = require('express'),
+      app = express(),
+      bodyParser = require('body-parser'),
+      port = process.env.PORT || 3000;
 
 app.set('views', __dirname + '/views')
 app.engine('jade', require('jade').__express)

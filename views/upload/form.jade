@@ -1,0 +1,14 @@
+extends ../layout/layout.jade
+
+block content
+  div.panel.panel-default.upload-form
+    div.panel-body
+      block alert
+    
+      form(action="/upload", method="POST", enctype="multipart/form-data")
+        div.form-group
+          label(for="exampleInputFile") CSV file
+          input(type="file", name="csvData")
+          p.help-block Please select a csv file to upload
+            
+        button.btn.btn-default(type="submit") Upload
