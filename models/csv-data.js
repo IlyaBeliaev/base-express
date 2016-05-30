@@ -2,7 +2,7 @@ const db = require('./storage'),
       _ = require('lodash');
 
 module.exports.add = function(data) {
-  db.set('csvData', _.concat(db._.get('csvData'), data)).value();
+  db.set('csvData', _.concat(db.get('csvData').value(), data)).value();
 }
 
 module.exports.get = function() {

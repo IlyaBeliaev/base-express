@@ -6,6 +6,10 @@
   margin: 20px 0;
 }
 
+.upload-form input {
+  max-width: 200px;
+}
+
 .data-grid {
   margin: 20px 0;
   overflow: scroll;

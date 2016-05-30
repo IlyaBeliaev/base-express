@@ -18,7 +18,7 @@ router.post('/', upload.single('csvData'), function(req, res) {
     return;
   }
 
-  const csvConverter = new Converter({ delimiter: [';']});
+  const csvConverter = new Converter({ delimiter: [req.body.delimiter]});
 
   csvConverter.fromString(req.file.buffer.toString('utf-8'), function(err,result){
     let success, message;
