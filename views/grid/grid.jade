@@ -3,16 +3,14 @@ extends ../layout/layout.jade
 block content
   script(src='/js/editable.js')
 
-  div.panel.panel-default.data-grid
-    div.panel-body
-      table.table.table-bordered
-        thead
-          tr
-            each key in keys
-              th=key
-        tbody
-          each row, rowIndex in rows
-            tr
-              each key in keys
-                td.editable(data-id=rowIndex, data-key=key)=(row && row[key] ? row[key] : '')
+  table.table.table-bordered.data-grid
+    thead
+      tr
+        each key in keys
+          th=key
+    tbody
+      each row, rowIndex in rows
+        tr
+          each key in keys
+            td.editable(data-id=rowIndex, data-key=key)=(row && row[key] ? row[key] : '')
         
